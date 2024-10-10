@@ -1,0 +1,15 @@
+[[headers]]
+  for = "/*.wasm"
+  [headers.values]
+    Content-Type = "application/wasm"
+    Content-Encoding = "gzip" # ファイルが圧縮されている場合のみ
+
+[[headers]]
+  for = "/*.br"
+  [headers.values]
+    Content-Encoding = "br"
+
+[[headers]]
+  for = "/*.gz"
+  [headers.values]
+    Content-Encoding = "gzip"
